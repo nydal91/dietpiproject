@@ -31,7 +31,7 @@ with tf.Session() as sess:
         human_string = label_lines[node_id]
         score = predictions[0][node_id]
         print('%s (score = %.5f)' % (human_string, score))
-        if human_string in 'birth':
+        if human_string in 'cowbirth':
             if score*100 > 60:
                 print('%s winner %s' % (score*100, human_string))
                 message = '%s chance %s was seen' % (score*100, human_string) 
