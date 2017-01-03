@@ -26,8 +26,6 @@ limitations under the License.
 #include <fstream>
 #include <jpeglib.h>
 #include <setjmp.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 #include "tensorflow/core/framework/graph.pb.h"
 #include "tensorflow/core/framework/tensor.h"
@@ -275,8 +273,6 @@ Status PrintTopLabels(const std::vector<Tensor>& outputs,
   return Status::OK();
 }
 
-///test
-system("my_bash_script.sh");
 
 // This is a testing function that returns whether the top label index is the
 // one that's expected.
