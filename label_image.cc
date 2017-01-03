@@ -26,6 +26,8 @@ limitations under the License.
 #include <fstream>
 #include <jpeglib.h>
 #include <setjmp.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 #include "tensorflow/core/framework/graph.pb.h"
 #include "tensorflow/core/framework/tensor.h"
@@ -41,6 +43,7 @@ limitations under the License.
 #include "tensorflow/core/platform/types.h"
 #include "tensorflow/core/public/session.h"
 #include "tensorflow/core/util/command_line_flags.h"
+
 
 // These are all common classes it's handy to reference with no namespace.
 using tensorflow::Flag;
@@ -271,6 +274,9 @@ Status PrintTopLabels(const std::vector<Tensor>& outputs,
   }
   return Status::OK();
 }
+
+///test
+system("my_bash_script.sh");
 
 // This is a testing function that returns whether the top label index is the
 // one that's expected.
