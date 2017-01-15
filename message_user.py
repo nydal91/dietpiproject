@@ -2,7 +2,7 @@ import time
 import os
 from twilio.rest import TwilioRestClient
 
-file = open('/nummer/phone.txt', 'r')
+file = open('/mnt/dietpi_userdata/phone.txt', 'r')
 data = file.read(11)
 
 print(data)
